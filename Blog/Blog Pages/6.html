@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog/CS NIST CSF FUNCTION</title>
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a72dd3ca27.js" crossorigin="anonymous"></script>
+    <!-- Font 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #a5005b;
+        color: #ffffff;
+        font-family: 'Syne', sans-serif;
+    }
+
+    .card-animation {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 800vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-animation .card-header {
+        font-size: 50px;
+        margin: 30px 0px;
+        color: #ffffff;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .card-animation .card-text-below {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .card-animation .card-side-text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-left: 320px;
+        color: #ffffff;
+    }
+
+    .card-paragraph {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card-paragraph span {
+        font-weight: 600;
+    }
+
+    .next {
+        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+
+</style>
+
+<body>
+
+    <div class="card-animation" id="card-animation">
+        <p class="card-header">CYBERSECURITY<br> TRAINING NOTES<br> NIST CSF FUNCTION: <br> IDENTIFY</p>
+        <div class="card-paragraph">
+        <br>
+        CREDITS: The following notes were from a lecture originally created by 
+        <a href="https://selinc.com/" style="color: #ffffff;"><br> SCHWEITZER ENGINEERING LABORATORIES </a>
+        This is all for study purposes only. <br>THESE WERE PUBLISHED WITH PERMISSION AS WELL.
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <span> ASSET MANAGEMENT </span>
+        <br>
+        <br>
+        <span>SUBCATEGORIES:</span>
+        <br><br>
+        <span>ID.AM-1:</span><br><br> Physical devices and systems within the organization are inventoried.
+        <br><br>
+        <span>ID.AM-2:</span><br><br> Software platforms and applications within the organization are inventoried.
+        <br><br>
+        <span>ID.AM-3:</span><br><br> Organizational communication and data flows are mapped.
+        <br><br>
+        <span>ID.AM-4:</span><br><br> External information systems are catalogued
+        <br><br>
+        <span>ID.AM-5:</span><br><br> Resources (e.g., hardware, devices, data, time, personnel, 
+        <br>and software) are prioritized based on their classification, criticality, and business value.
+        <br><br>
+        <span>ID.AM-6:</span><br><br> Cybersecurity roles and responsibilities for 
+        <br>the entire workforce and third party stakeholders are accounted.
+        <br><br><br>
+        <span>DEFINITION - ASSET</span>
+        <br><br>The data, personnel, devices, systems, and facilities that enable 
+        <br>the organization to achieve business.
+        <br><br><br>
+        <span>IMPORTANCE OF ASSET MANAGEMENT</span>
+        <br><br>
+        Benefits of a strong asset management solution:
+        <br><br>
+        - Maintenance of device firmware/software versioning
+        <br>
+        - Rapid identification of unknown or new devices on OT network
+        <br>
+        - Change control logging and management
+        <br>
+        - Supporting backup and disaster recovery efforts.
+        <br><br>
+        <span>"YOU CANNOT PROTECT <br>WHAT YOU DON'T KNOW</span>
+        <br><br><br>
+        <span>ASSET IDENTIFICATION</span>
+        <br><br>
+        - <span>DATE:</span><br><br> Information
+        <br><br>
+        - <span>PEOPLE:</span><br><br> Personnel and their role/classification
+        <br><br>
+        - <span>SOFTWARE:</span><br><br> OS, SCADA software, HMI software, IT software.
+        <br><br>
+        - <span>HARDWARE:</span><br><br> Computers, servers, distributed and embedded computing systems.
+        <br><br>
+        - <span>COMMUNICATION ASSETS:</span><br><br> Firewalls load balances, etc.
+        <br><br>
+        - <span>FACILITIES:</span><br><br> Buildings, home environment, etc.
+        <br><br><br>
+        <span>ASSET IDENTIFICATION TOOLS</span>
+        <br><br>
+        - Asset Discovery
+        <br><br>
+        - Threat Detection
+        <br><br>
+        - Case Management
+        <br><br>
+        - Workflow
+        <br><br>
+        - Playbooks
+        <br><br><br>
+        <span>TYPES OF ASSET INVENTORIES</span>
+        <br><br>
+        -<span>MANUAL:</span>
+        <br><br>Database that is typically stored in a spreadsheet 
+        <br>which is updated by hand (Excel, MS Access database).
+        <br><br>
+        - <span>AUTOMATED:</span>
+        <br><br> Leverages OT network connections to query devices, 
+        <br>gather configuration information, and store it in a database (Spiceworks, GLPI).
+        <br><br><br>
+        <span>ACTIVE VS PASSIVE IDENTIFICATION</span>
+        <br><br>
+        <span>ACTIVE IDENTIFICATION:</span>
+        <br><br>
+        - Query-based Discovery
+        <br><br>
+        <i>Network Scanning Ping Sweeps</i>
+        <br><br>
+        <span>PASSIVE IDENTIFICATION:</span>
+        <br><br>
+        - Traffic analysis-based discovery
+        <br><br>
+        <i>Tap or scan ports review gathered traffic</i>
+        <br><br><br>
+        <span>ASSET IDENTIFICATION TOOLS</span>
+        <br><br>
+        Active Identification:
+        <br><br>
+        - <i>LAN Sweeper</i>
+        <br>
+        - <i>Nmap</i>
+        <br>
+        - <i>Tenable Nessus</i>
+        <br><br>
+        Passive Identification:
+        <br><br>
+        - <i>Dragos</i>
+        <br>
+        - <i>GRASSMARLIN</i>
+        <br>
+        - <i>Network Perception</i>
+        <br><br><br>
+        <span>CATEGORIZE COMMUNICATION CHANNELS</span>
+        <br><br>
+        <b>EXAMPLES:</b>
+        <br><br>
+        - <i>Business Communications <br>
+        (Events, Syslog, Metering, and Planning)</i>
+        <br><br>
+        - <i>Engineering Access</i>
+        <br><br>
+        - <i>SCADA</i>
+        <br><br>
+        - <i>DMZ</i>
+        <br><br>
+        - <i>M2M protections and system state</i>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <span>BUSINESS ENVIROMENT</span>
+        <br><br><br>
+        <span>SUBCATEGORIES:</span>
+        <br><br>
+        <span>ID.BE-1:</span><br><br> The organizations role in the supply 
+        <br>chain is identified and communicated
+        <br><br>
+        <span>ID.BE-2:</span><br><br> The organizations place in critical 
+        <br>infrastructure and its industry sector
+        <br><br>
+        <span>ID.BE-3:</span><br><br> Priorities for organizational mission, 
+        <br>objectives, and activities are established and communicated
+        <br><br>
+        <span>ID.BE-4:</span><br><br> Dependencies and critical functions for 
+        <br>delivery of critical services are established
+        <br><br>
+        <span>ID.BE-5</span><br><br> Resilience requirements to support delivery of critical services 
+        <br>are established for all operating states (e.g. under duress/attack, during recovery, normal operations)
+        <span>DEFINITIONS</span>
+        <br><br>Supply Chain: The network of retailers, distributors, transporters. storage facilities,
+        <br> and suppliers that participate in the delivery and production. 
+        <br><br>
+        <span>CRITICAL INFRASTRUCTURE:</span>
+        <br><br>A system whose incapacitation or destruction would have 
+        <br>debilitating impact on the defense or economic security of the nation. (There is 16 of them)
+        <br><br><br>
+        <span>MISSIONS, OBJECTIVES, ACTIVITIES</span>
+        <br><br>
+        - Business Plans
+        <br><br>
+        - Mission
+        <br><br>
+        - Strategic Plans
+        <br><br>
+        - Tactical Plans
+        <br><br>
+        - Goals
+        <br><br>
+        - Objectives
+        <br><br>
+        - Critical Success Factors
+        <br><br>
+        - KPIs
+        <br><br>
+        - Projects
+        <br><br><br>
+        <span>RESILIENCE REQUIREMENTS</span>
+        <br><br>
+        Identify critical system components and functions by performing a criticality analysis
+        <br>
+        Criticality is assessed in terms of the impact of function or component failure
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <span>GOVERNANCE</span>
+        <br><br><br>
+        <span>SUBCATEGORIES:</span>
+        <br><br>
+        <span>ID.GV-1:</span><br><br> Organizational cybersecurity
+        <br> policy is established and communicated
+        <br><br>
+        <span>ID.GV-2:</span><br><br> Cybersecurity roles and responsibilities 
+        <br>are coordinated and aligned with internal roles and external partners
+        <br><br>
+        <span>ID.GV-3:</span><br><br> Legal and regulatory requirements regarding 
+        <br>cybersecurity, including privacy and civil liberties obligations, are understood and managed
+        <br><br>
+        <span>ID.GV-4:</span><br><br> Governance and risk management processes address cybersecurity risks
+        <br><br><BR>
+        <span>POLICY, PROCESS, AND PROCEDURES</span>
+        <br><br>
+        - Driven by executive-level business management.
+        <br><br>
+        - Integrate importance of cybersecurity into foundational documentation
+        <br><br>
+        - Multiple Methods of Delivery
+        <br><br>
+        - In-person Trainings
+        <br><br>
+        - Internet-based Trainings
+        <br><br>
+        - Physical or virtual documentation review.
+        <br><br><br>
+        <span>POLICY-GENERAL PRINCIPLES</span>
+        <br><br>
+        Policy is a formal, high-level statement with broad application designed to reduce security risk.
+        <br><br>
+        <span>EXAMPLES:</span>
+        <br><br>
+        Remote Access Policy
+        <br><br>
+        Data Breach Response Policy
+        <br><br>
+        Information Security Policy
+        <br><br>
+        "Corporate emails shall only be used for corporate business."
+        <br><br>
+        "Data in email attachments shall be encrypted"
+        <br><br><br>
+        <span>STANDARDS - SPECIFIC REQUIREMENTS</span>
+        <br><br>
+        Standards define security requirements and serve as a guide for how to comply with requirements.
+        <br><br>
+        <span>EXAMPLES:</span>
+        <br><br>
+        Cyber Incident response standard
+        <br><br>
+        Information security risk standard
+        <br><br>
+        <span>PROCESS -</span><br><br> Series of Related Tasks
+        <br><br>
+        Processes are structured steps designed to accomplish the objective of meeting the stated policy.
+        <br><br>
+        <span>PROCEDURE -</span><br><br> Prescriptive
+        <br><br>
+        Procedures are step-by-step work instructions of the process.
+        <br><br><br>
+        </div>
+        
+    </div>
+
+    <script>
+        const tl = gsap.timeline();
+        tl.from(".img", {
+            delay: 0.5,
+            y: -100,
+            height: 0,
+            duration: 1,
+            ease: "Power1.easeInOut",
+        });
+        tl.from(
+            ".card-header, .card-side-text, .card-paragraph, .card-text-below",
+            {
+                y: -50,
+                opacity: 0,
+                stagger: {
+                    amount: 0.3,
+                },
+            },
+            "-=.3"
+        );
+    </script>
+</body>
+</html>
