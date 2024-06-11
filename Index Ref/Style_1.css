@@ -1,0 +1,278 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Syne', sans-serif;
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+}
+
+body {
+	background: rgb(0, 0, 0);
+}
+
+section {
+	padding-top: 150px;
+	padding-bottom: 50px;
+}
+
+.wrapp {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.content {
+	width: 100%;
+	padding: 0 70px;
+}
+
+.char {
+	display: inline-block;
+}
+
+nav {
+	position: fixed !important;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 2;
+}
+
+.nav__logo,
+.nav__items-link {
+	padding: 40px;
+}
+
+.nav__logo a {
+	color: #ffffff;
+	font-size: 50px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Syne', sans-serif;
+	font-weight: 600;
+}
+
+.nav__items {
+	display: flex;
+}
+
+.nav__items-link a {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.nav__items-link.active a {
+	text-decoration: underline;
+}
+
+.Music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4vh; /* Make the container full height of the viewport */
+}
+
+#content {
+    margin-top: 70px; /* Adjust the top margin as needed */
+}
+
+
+.header {
+	position: relative;
+	display: flex;
+	padding: 0 50px;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 700px;
+}
+
+
+.title {
+	position: relative;
+	margin: 0;
+	font-size: 95px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	mix-blend-mode: difference;
+	z-index: 2;
+}
+
+.title_paralax {
+	display: inline-block;
+	will-change: transform;
+}
+
+.title .stroke {
+	display: inline-block;
+	will-change: transform;
+}
+
+.header__img {
+	position: absolute;
+	width: 25%;
+	height: 45vh;
+	top: 200px;
+	right: 560px;
+	clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	overflow: hidden;
+}
+
+.header__img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.section-title {
+	position: sticky;
+	margin: 0;
+	margin-bottom: 60px;
+	line-height: .8;
+	font-size: 50px;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.section-title .stroke {
+	color: transparent;
+	-webkit-text-stroke: 1px #ffffff;
+}
+
+.about .section-title {
+	text-align: center;
+}
+
+.about__wrapp {
+    position: relative;
+    height: 100vh;
+}
+
+.about__img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about__txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.about_p {
+	line-height: 1.1;
+	font-size: 19px;
+	font-weight: 510;
+	color: #ffffff;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px; /* Set height if needed */
+}
+
+
+.work {
+	padding-top: 150px;
+}
+
+.work__wrapp {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 120px;
+	justify-content: space-between;
+	padding: 0 120px;
+}
+
+.work__item {
+	position: relative;
+	width: calc(50% - 60px);
+	height: 100vh;
+}
+
+.work__item-num {
+	position: absolute;
+	display: inline-block;
+	font-size: 70px;
+	color: var(--pr-color);
+	mix-blend-mode: difference;
+	z-index: 2;
+}
+
+.work__item-img {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.work__item-img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.proj__item {
+	position: relative;
+	padding: 40px 0;
+	border-bottom: 1px solid #ffffff;
+}
+
+.proj__itemwater {
+	position: absolute;
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.proj__itemwater img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	transform: rotate(180deg);
+}
+
+.proj__item-txt {
+	font-size: 50px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.footer__div {
+	font-size: 70px;
+	letter-spacing: 15px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.footer__div span {
+	display: inline-block;
+}

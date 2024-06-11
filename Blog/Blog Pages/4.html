@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>II/Blog page 1</title>
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a72dd3ca27.js" crossorigin="anonymous"></script>
+    <!-- Font 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: 'Syne', sans-serif;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    .nav__logo,
+    .nav__items-link {
+        padding: 40px;
+    }
+
+    .nav__logo a {
+        color: #ffffff;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .nav__items {
+        display: flex;
+    }
+
+    .nav__items-link a {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    .nav__items-link.active a {
+        text-decoration: underline;
+    }
+
+    .card-animation {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card-animation .card-header {
+        font-size: 50px;
+        margin: 30px 0px;
+        color: #ffffff;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .card-animation .card-text-below {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+
+    .card-animation .card-side-text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-left: 320px;
+        color: #ffffff;
+    }
+
+    .card-paragraph {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .card-paragraph span {
+        font-weight: 600;
+    }
+
+    .next {
+        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .card-animation .img {
+        width: 300px;
+        height: 400px; /* Reduced height */
+        background: url(/Blog/Images/blog4.gif) no-repeat; /* Moved to top */
+        background-size: contain; /* Make the image resizable */
+        margin: 45px auto; /* Added some top margin */        
+    }
+
+</style>
+
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <a href="/index.html">II</a>
+        </div>
+
+        <div class="nav__items">
+            <div class="nav__items-link"><a href="/index.html">Home</a></div>
+            <div class="nav__items-link"><a href="/Photography/gallery.html">Photography</a></div>
+            <div class="nav__items-link"><a href="/Blog/Blog.html">Blog</a></div>
+            <div class="nav__items-link"><a href="/web dev/web.html">Projects</a></div>
+            <div class="nav__items-link"><a href="/about/about.html">About</a></div>
+        </div>
+    </nav>
+
+    <div class="card-animation" id="card-animation">
+        <div class="img"></div>
+        
+        <p class="card-header">ART THROUGH<br> MY PERSPECTIVE</p>
+        
+        <div class="card-paragraph">
+            <br>
+            Art, a realm of imagination and expression, often evokes romanticized notions of beauty and inspiration. 
+            <br>
+            People gaze upon masterpieces, captivated by the strokes of brilliance that adorn canvases and the melodies 
+            <br>
+            that serenade their ears, seldom realizing the depths of emotion, sacrifice, and inner turmoil that artists 
+            <br>
+            endure to bring their creations to life. As we delve deeper into the world of art, "Art in My Eyes" seeks to 
+            <br>
+            unravel the intricate tapestry that lies beneath the surface, shedding light on the profound struggles and 
+            <br>
+            unwavering dedication that artists grapple with.
+            <br>
+            <br>
+            <b>The Romanticized Facade vs. The Hidden Reality</b>
+            <br>
+            <br>
+            The enchantment that surrounds art and artists often stems from a superficial perspective, where the final 
+            <br>
+            outcome is celebrated without comprehending the profound journey that led to its inception. 
+            <br>
+            The world beholds paintings that breathe life, sculptures that convey emotions frozen in time, and melodies that touch souls. 
+            <br>
+            Yet, few glimpse the artist's late-night vigils, pouring heart and soul into their work, 
+            <br>
+            or the moments of self-doubt that haunt them during the creative process. 
+            <br>
+            The reality is that behind those aesthetically pleasing works lies a profound and often painful reality.
+            <br>
+            <br>
+            <b>The Creative Abyss: Addiction to Creation</b>
+            <br>
+            <br>
+            Artists, bound by their relentless pursuit of creativity, often find themselves ensnared in a 
+            <br>
+            unique addiction—the craving to create. This addiction transcends the realms of conventional perception, 
+            <br>
+            driven by an insatiable hunger to give form to the abstract musings of their mind. The artist becomes a mere vessel, 
+            <br>
+            channeling raw emotions and visions into their art, even if it means sacrificing sleep, comfort, 
+            <br>
+            and personal well-being. This relentless dedication to their craft paints a portrait of an artist who would 
+            <br>
+            rather face the depths of exhaustion than sever the ties that bind them to their creative expression.
+            <br>
+            <br>
+            <b>The Perilous Dance: A Symphony of Sacrifice</b>
+            <br>
+            <br>
+            As the creative addiction takes root, artists navigate a perilous dance between their passion and their well-being. 
+            <br>
+            The pursuit of perfection often drives them to extremes, pushing boundaries physically, mentally, and emotionally. 
+            <br>
+            Sleepless nights, skipped meals, and the relentless pursuit of an unattainable vision become their daily companions. 
+            <br>
+            The artist treads a fine line between self-destruction and artistic evolution, driven by an insatiable desire to manifest their innermost thoughts. 
+            <br>
+            It's a paradoxical existence where the act of creation itself can simultaneously elevate and deplete, nourish and torment.
+            <br>
+            <br>
+            <b>Misery and Salvation: The Paradox of Art</b>
+            <br>
+            <br>
+            The profound paradox that defines an artist's relationship with their craft lies in the intersection of misery and salvation. 
+            <br>
+            The very act that can drive an artist to the brink of exhaustion and despair is also the lifeline that rescues them from the abyss. 
+            <br>
+            In those solitary moments, when the world fades away and the artist's focus narrows to their canvas or instrument, 
+            <br>
+            a sense of purpose washes over them. It becomes their refuge, their solace, their way of making sense of the chaotic symphony of emotions that echo within.
+            <br>
+            <br>
+            <b>The Enigmatic Love for Suffering: The Artist's Masochism</b>
+            <br>
+            <br>
+            Within the heart of the artist, a peculiar affinity for suffering resides—a masochism that fuels their creative fire. 
+            <br>
+            The torment that comes hand in hand with creation is paradoxically embraced and even welcomed. 
+            <br>
+            The struggle, the self-doubt, the restless nights—they become an integral part of the artistic journey. 
+            <br>
+            It's a testament to the artist's resilience, an acknowledgment of their willingness to traverse the treacherous path less traveled. 
+            <br>
+            The very suffering that outsiders may see as a deterrent is, in the eyes of the artist, a driving force, a muse that awakens their spirit.
+            <br>
+            <br>
+            <b>In Conclusion: A Multifaceted Portrait of Art and Artists</b>
+            <br>
+            <br>
+            "Art in My Eyes" transcends the superficial lens through which art is often perceived. It lays bare the complexities that underlie the world of artistic creation, 
+            <br>
+            illuminating the struggles, sacrifices, and the unparalleled dedication that artists invest in their work. It showcases how the beauty of art is not merely a stroke of genius, 
+            <br>
+            but a culmination of countless moments of agony and ecstasy. The artist, shackled by their creative addiction, dances on the precipice of their own desires, 
+            <br>
+            embracing suffering as an integral part of their identity. It is a tale of passion, of endurance, and of the profound connection between misery and 
+            <br>
+            salvation—an ode to the enigmatic masochism that makes artists the extraordinary beings they are.
+            <br>
+
+        </div>
+
+        <div class="card-text-below">
+            <a class="next" href="/Blog/Blog Pages/3.html"><i class="fas fa-arrow-alt-circle-left"></i></a>
+            <a class="next" href="/Blog/Blog Pages/5.html"><i class="fas fa-arrow-alt-circle-right"></i></a>
+        </div>
+        
+    </div>
+
+    <script>
+        const tl = gsap.timeline();
+        tl.from(".img", {
+            delay: 0.5,
+            y: -100,
+            height: 0,
+            duration: 1,
+            ease: "Power1.easeInOut",
+        });
+        tl.from(
+            ".card-header, .card-side-text, .card-paragraph, .card-text-below",
+            {
+                y: -50,
+                opacity: 0,
+                stagger: {
+                    amount: 0.3,
+                },
+            },
+            "-=.3"
+        );
+    </script>
+</body>
+</html>
