@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RGB Color Guessing Game</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div id="container">
+        <h1>RGB Color Guessing Game</h1> <!-- Heading of the game -->
+        <div id="levels">
+            <!-- Level selection buttons -->
+            <button class="level" data-level="0">Easy</button> <!-- Easy level button -->
+            <button class="level" data-level="1">Medium</button> <!-- Medium level button -->
+            <button class="level" data-level="2">Hard</button> <!-- Hard level button -->
+            <button class="level" data-level="3">Extreme Hard</button> <!-- Extreme Hard level button -->
+        </div>
+        <div id="colorDisplay"></div> <!-- Display the RGB color to guess -->
+        <div id="options">
+            <!-- Color options will be dynamically generated here -->
+        </div>
+        <div id="hearts">
+            <!-- Heart icons representing lives will be dynamically generated here -->
+        </div>
+        <div id="message"></div> <!-- Display messages to the user -->
+        <button id="reset">Play Again</button> <!-- Button to reset the game -->
+    </div>
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>
